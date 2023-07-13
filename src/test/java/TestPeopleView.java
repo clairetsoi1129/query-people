@@ -45,8 +45,9 @@ public class TestPeopleView {
     void printInputFileText()  throws ValidationException {
         peopleView.printInputFileText();
 
-        assertEquals("Please input the absolute path of the file(s), " +
-                "if you have more than one files, please add ',' in between. eg. fileA, fileB.",
+        assertEquals("Please input the path of the file(s), \n" +
+                        "if you have more than one files, please add ',' in between. eg. fileA, fileB.\n" +
+                        "You can also use prepared file [testfile/input.csv]:",
                 outputStreamCaptor.toString().trim());
     }
 
