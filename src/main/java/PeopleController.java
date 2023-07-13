@@ -20,7 +20,7 @@ public class PeopleController {
         try {
             processFileInput(filePath);
         }catch (FileNotFoundException e){
-            System.err.println(filePath+ "not found");
+            System.err.println("File "+filePath+ " not found!");
             System.exit(1);
         }
         peopleView.printOptionsText();
