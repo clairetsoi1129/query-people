@@ -4,8 +4,9 @@ import java.util.Scanner;
 
 public class PeopleView {
     private final String MSG_WELCOME = "Welcome to querying people.";
-    private final String MSG_INPUT_FILE = "Please input the absolute path of the file(s), " +
-            "if you have more than one files, please add ',' in between. eg. fileA, fileB.";
+    private final String MSG_INPUT_FILE = "Please input the path of the file(s), \n" +
+            "if you have more than one files, please add ',' in between. eg. fileA, fileB.\n" +
+            "You can also use prepared file [testfile/input.csv]: ";
 
     private final String MSG_OPTIONS = """
                 Please select from one of the six options below:\s
