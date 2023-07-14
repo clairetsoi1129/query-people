@@ -11,7 +11,6 @@ public class EnhancedPeopleModel extends PeopleModel{
 
     public void addPersonList(List<Person> pList){
         personList.addAll(pList);
-        System.out.println("addPersonList:"+personList.size());
     }
 
     // Q3. How might you add new queries?
