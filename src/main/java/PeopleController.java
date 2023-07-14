@@ -5,8 +5,8 @@ import java.io.FileReader;
 import java.util.List;
 
 public class PeopleController {
-    private final PeopleModel peopleModel;
-    private final PeopleView peopleView;
+    protected final PeopleModel peopleModel;
+    protected final PeopleView peopleView;
 
     public PeopleController(PeopleModel peopleModel, PeopleView peopleView) {
         this.peopleModel = peopleModel;

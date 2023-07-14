@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 
 @Data
 public class PeopleModel {
-    private List<Person> personList;
+    protected List<Person> personList;
 
     public List<Person> filterByName(String firstName, String lastName){
         return personList.stream()
@@ -50,11 +50,11 @@ public class PeopleModel {
                 .collect(Collectors.toList());
     }
 
-    private long parsePhoneNumber(String phoneNumber){
+    protected long parsePhoneNumber(String phoneNumber){
         return Long.parseLong(phoneNumber.replaceAll("\\D", ""));
     }
 
-    private String parseFirstPortionPostalDigit(String postCode){
+    protected String parseFirstPortionPostalDigit(String postCode){
         String firstPortion = postCode.substring(0, postCode.indexOf(" "));
         return firstPortion.replaceAll("[a-zA-Z]", "");
     }

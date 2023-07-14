@@ -3,11 +3,11 @@ import java.util.List;
 import java.util.Scanner;
 
 public class PeopleView {
-    private final String MSG_WELCOME = "Welcome to querying people.";
-    private final String MSG_INPUT_FILE = "Please input the path of the file, \n" +
+    protected final String MSG_WELCOME = "Welcome to querying people.";
+    protected final String MSG_INPUT_FILE = "Please input the path of the file, \n" +
             "You can also use prepared file [testfile/input.csv]:";
 
-    private final String MSG_OPTIONS = """
+    protected final String MSG_OPTIONS = """
                 Please select from one of the six options below:\s
                 OPTION 1: Every person who has “Esq” in their company name.
                 OPTION 2: Every person who lives in “Derbyshire”.
@@ -20,7 +20,7 @@ public class PeopleView {
                 The portion after the space is not relevant.)
                 OPTION 6: Every person whose first phone number is numerically larger than their second phone number.""";
 
-    private final Scanner scanner;
+    protected final Scanner scanner;
 
     public PeopleView(){
         this.scanner = new Scanner(System.in);
