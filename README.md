@@ -4,6 +4,8 @@ QueryPeople is a text UI application which can parse a file and query the result
 The program will read various comma-separated variables (csv) file which contains (fake!) data for a number of people with follow fields:
 First name, Last name, Company, Address, City, Country, Postal, Phone1, Phone2, Email, Web. 
 
+Then it will provide 6 query options for user to select. And provide the result based on user's selection.
+
 ## UML diagram
 ### Class Diagram:
 ![class diagram](QueryPeople.drawio.png)
@@ -24,7 +26,3 @@ mvn compile exec:java -Dexec.mainClass="PeopleMain"
 
 ### Assumptions:
 1. The file provided is valid csv file
-
-### Future thoughts
-1. Support multiple csv files
-2. 
