@@ -24,5 +24,17 @@ mvn compile exec:java -Dexec.mainClass="PeopleMain"
 3. Input the option 1-6 to query the data in the file.
 4. Result will be displayed based on the option selected.
 
+### How to run EnhancedMain progam:
+1. Run the PeopleMain to start the application
+```
+mvn compile exec:java -Dexec.mainClass="EnhancedPeopleMain"
+```
+2. Select the file data source 1-3
+3. Input the file path or Rest API URI which can provide the data. 
+4. Input the option 1-6 to query the data in the file.
+5. Result will be displayed based on the option selected.
+
 ### Assumptions:
-1. The file provided is valid csv file
+1. The file provided is a valid csv or a tsv file or the json provided is valid which contains person details.
+
+
