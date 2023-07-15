@@ -1,11 +1,20 @@
 import lombok.Data;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Data
 public class PeopleModel {
     protected List<Person> personList;
+
+    public PeopleModel(){
+        personList = new ArrayList<>();
+    }
+
+    public void addPersonList(List<Person> pList){
+        personList.addAll(pList);
+    }
 
     public List<Person> filterByName(String firstName, String lastName){
         return personList.stream()

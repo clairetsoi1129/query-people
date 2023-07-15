@@ -37,7 +37,7 @@ public class PeopleController {
         for (int i=0; i<personList.size(); i++){
             personList.get(i).setPosition(i+1);
         }
-        peopleModel.setPersonList(personList);
+        peopleModel.addPersonList(personList);
     }
 
     public List<Person> processOption(String option) {
