@@ -1,3 +1,4 @@
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.opencsv.bean.CsvBindByName;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,10 +11,13 @@ public class Person {
 
     private int position;
     @CsvBindByName (column = "first_name")
+    @JsonProperty("first_name")
     private String firstName;
     @CsvBindByName (column = "last_name")
+    @JsonProperty("last_name")
     private String lastName;
     @CsvBindByName (column = "company_name")
+    @JsonProperty("company_name")
     private String companyName;
     @CsvBindByName
     private String address;
